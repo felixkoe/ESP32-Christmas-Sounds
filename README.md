@@ -19,6 +19,9 @@ On startup or on a trigger event, the ESP32 plays festive melodies — ideal for
 - 1 x 1k Ohm Resistor
 - A few jumper Cables
 
+<img width="1052" height="494" alt="image" src="https://github.com/user-attachments/assets/5bdf1697-5037-473d-aad9-609f7724a652" />
+
+
 ## Installation
 
 ```bash
