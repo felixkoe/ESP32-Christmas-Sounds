@@ -7,17 +7,17 @@ On startup or on a trigger event, the ESP32 plays festive melodies — ideal for
 ## Features  
 - Playback of Christmas melodies using the ESP32  
 - Fully compatible with PlatformIO  
-- Easily replaceable melodies or tone sequences  
-- Minimal hardware requirements  
-- Clean and extensible code structure
 
 ## Hardware Requirements  
 - ESP32 development board (e.g., WROOM, DevKit)  
-- Audio output according to your setup:  
-  - DAC output, PWM, or I2S audio module  
-  - Small speaker and amplifier (optional)  
-- USB cable for flashing  
-- PlatformIO installed
+- 1 x Passiv Buzzer
+- 1 x Button
+- 1 x red LED
+- 1 x green LED
+- 1 x 100 Ohm Resistor
+- 2 x 220 Ohm Resistor
+- 1 x 1k Ohm Resistor
+- A few jumper Cables
 
 ## Installation
 
