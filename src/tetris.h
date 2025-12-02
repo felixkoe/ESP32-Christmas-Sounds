@@ -1,0 +1,95 @@
+#ifndef SONG_TETRIS_H
+#define SONG_TETRIS_H
+
+#include "notes.h"
+
+// automatisch generiert aus WAV
+int melody_tetris[] = {
+    NOTE_E5, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_C5, NOTE_B4, NOTE_A4, 
+    NOTE_A4, NOTE_A4, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_B4, NOTE_GS4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_C5, NOTE_C5, 
+    NOTE_A4, NOTE_A4, NOTE_D5, NOTE_D5, NOTE_F5, NOTE_A5, NOTE_A5, NOTE_G5, 
+    NOTE_F5, NOTE_E5, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_B4, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_C5, NOTE_C5, 
+    NOTE_A4, NOTE_A4, NOTE_E5, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_A4, NOTE_A4, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_B4, NOTE_GS4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_C5, NOTE_C5, 
+    NOTE_A4, NOTE_A4, NOTE_D5, NOTE_D5, NOTE_F5, NOTE_A5, NOTE_C5, NOTE_G5, 
+    NOTE_F5, NOTE_E5, NOTE_E5, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, 
+    NOTE_B4, NOTE_B4, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_C5, 
+    NOTE_C5, NOTE_A4, NOTE_A4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_C4, 
+    NOTE_E4, NOTE_C4, NOTE_E4, NOTE_D4, NOTE_E4, NOTE_D4, NOTE_E4, NOTE_E4, 
+    NOTE_E4, NOTE_E4, NOTE_E4, NOTE_C4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, 
+    NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_C4, NOTE_E4, NOTE_D4, NOTE_E4, 
+    NOTE_D4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, 
+    NOTE_A4, NOTE_E4, NOTE_A4, NOTE_E4, NOTE_E4, NOTE_GS4, NOTE_GS4, NOTE_D4, 
+    NOTE_GS4, NOTE_E5, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_A4, NOTE_A4, NOTE_A4, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, 
+    NOTE_B4, NOTE_B4, NOTE_GS4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_C5, 
+    NOTE_A4, NOTE_A4, NOTE_D5, NOTE_D5, NOTE_F5, NOTE_A5, NOTE_A5, NOTE_G5, 
+    NOTE_F5, NOTE_E5, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_B4, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_GS4, NOTE_E5, NOTE_C5, NOTE_A4, 
+    NOTE_A4, NOTE_E5, NOTE_E5, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_C5, 
+    NOTE_B4, NOTE_A4, NOTE_A4, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, 
+    NOTE_B4, NOTE_GS4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_C5, 
+    NOTE_A4, NOTE_A4, NOTE_D5, NOTE_F5, NOTE_A5, NOTE_A5, NOTE_G5, NOTE_F5, 
+    NOTE_E5, NOTE_C5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, NOTE_B4, 
+    NOTE_B4, NOTE_C5, NOTE_D5, NOTE_GS4, NOTE_E5, NOTE_C5, NOTE_A4, NOTE_A4, 
+    NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_C4, NOTE_E4, NOTE_E4, 
+    NOTE_D4, NOTE_E4, NOTE_D4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, 
+    NOTE_C4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, 
+    NOTE_E4, NOTE_E4, NOTE_C4, NOTE_E4, NOTE_D4, NOTE_E4, NOTE_D4, NOTE_E4, 
+    NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_E4, NOTE_A4, NOTE_A4, 
+    NOTE_E4, NOTE_E4, NOTE_GS4, NOTE_GS4, NOTE_D4, NOTE_GS4, NOTE_E5, NOTE_E5, 
+    NOTE_B4, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_C5, NOTE_B4, NOTE_A4, NOTE_A4, 
+    NOTE_C5, NOTE_E5, NOTE_D5, NOTE_E5, NOTE_B4, NOTE_B4, NOTE_GS4, NOTE_C5, 
+    NOTE_D5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_C5, NOTE_C5, NOTE_A4, NOTE_A4
+    
+};
+
+int tempo_tetris[] = {
+    4, 9, 9, 6, 9, 6, 9, 6, 
+    9, 6, 9, 6, 9, 6, 6, 9, 
+    6, 9, 6, 6, 9, 3, 9, 6, 
+    4, 4, 9, 6, 6, 6, 9, 9, 
+    9, 3, 6, 6, 9, 6, 9, 6, 
+    9, 6, 9, 6, 9, 3, 6, 9, 
+    4, 3, 3, 9, 6, 4, 6, 9, 
+    4, 6, 9, 6, 9, 9, 9, 6, 
+    6, 9, 6, 6, 9, 4, 6, 9, 
+    4, 4, 6, 9, 6, 4, 9, 6, 
+    9, 6, 6, 6, 9, 9, 6, 9, 
+    6, 9, 6, 9, 6, 9, 4, 6, 
+    9, 4, 4, 6, 9, 6, 4, 4, 
+    4, 6, 6, 4, 9, 4, 9, 9, 
+    9, 6, 4, 4, 6, 12, 9, 9, 
+    6, 9, 6, 4, 6, 9, 4, 9, 
+    4, 9, 9, 9, 6, 9, 6, 9, 
+    4, 9, 3, 6, 6, 6, 4, 4, 
+    6, 4, 9, 6, 6, 9, 6, 9, 
+    6, 9, 6, 4, 6, 9, 9, 9, 
+    6, 6, 12, 6, 6, 9, 3, 4, 
+    3, 6, 9, 9, 6, 6, 9, 6, 
+    9, 3, 6, 6, 9, 6, 9, 6, 
+    9, 6, 9, 3, 9, 4, 6, 4, 
+    3, 9, 9, 6, 6, 6, 6, 6, 
+    9, 4, 6, 9, 4, 6, 9, 6, 
+    6, 9, 6, 6, 9, 6, 6, 3, 
+    4, 4, 4, 9, 6, 9, 6, 9, 
+    3, 6, 6, 9, 6, 9, 9, 9, 
+    6, 9, 4, 9, 4, 4, 4, 4, 
+    9, 9, 6, 9, 4, 3, 6, 6, 
+    4, 9, 4, 9, 9, 9, 6, 4, 
+    6, 6, 9, 12, 6, 9, 6, 9, 
+    6, 4, 3, 6, 4, 9, 9, 9, 
+    9, 9, 6, 9, 6, 9, 6, 3, 
+    6, 6, 6, 3, 4, 9, 9, 9, 
+    9, 6, 6, 9, 9, 9, 4, 6, 
+    9, 4, 6, 12, 6, 6, 9, 6, 
+    9, 9, 6, 6, 6, 9, 6, 4
+    
+};
+
+const int size_tetris = sizeof(melody_tetris) / sizeof(int);
+
+#endif // SONG_TETRIS_H

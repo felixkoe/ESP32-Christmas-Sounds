@@ -2,6 +2,8 @@
 #include "jingle_bells.h"
 #include "tannenbaum.h"
 #include "we_wish.h"
+#include "mario.h"
+#include "tetris.h"
 
 #define BUZZER_PIN 25
 #define LED_PIN_1 33
@@ -93,8 +95,12 @@ void loop() {
             selectedSong = 1;
         } else if (clickCount == 2) {
             selectedSong = 2;
-        } else {
+        } else if (clickCount == 3) {
             selectedSong = 3;
+        } else if (clickCount == 4) {
+            selectedSong = 4;
+        } else {
+            selectedSong = 5;
         }
 
         clickCount = 0;
@@ -107,6 +113,10 @@ void loop() {
         playSong(melody_wewish, tempo_wewish, size_wewish);
     } else if (selectedSong == 3) {
         playSong(melody_tannenbaum, tempo_tannenbaum, size_tannenbaum);
+    } else if (selectedSong == 4) {
+        playSong(melody_generated, tempo_generated, size_generated);
+    } else if (selectedSong == 5) {
+        playSong(melody_tetris, tempo_tetris, size_tetris);
     }
 
     delay(5);

@@ -1,0 +1,75 @@
+#ifndef SONG_GENERATED_H
+#define SONG_GENERATED_H
+
+#include "notes.h"
+
+// automatisch generiert aus WAV
+int melody_generated[] = {
+    NOTE_E5, NOTE_E5, NOTE_C5, NOTE_E5, NOTE_G5, NOTE_C5, NOTE_G4, NOTE_A4, 
+    NOTE_B4, NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_E5, NOTE_G5, NOTE_C5, NOTE_F5, 
+    NOTE_G5, NOTE_E5, NOTE_C5, NOTE_D5, NOTE_B4, NOTE_C5, NOTE_G4, NOTE_A4, 
+    NOTE_B4, NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_E5, NOTE_G5, NOTE_C5, NOTE_F5, 
+    NOTE_G5, NOTE_E5, NOTE_C5, NOTE_D5, NOTE_B4, NOTE_G5, NOTE_DS5, NOTE_D5, 
+    NOTE_DS5, NOTE_E5, NOTE_A4, NOTE_C5, NOTE_A4, NOTE_C5, NOTE_D5, NOTE_G5, 
+    NOTE_F5, NOTE_DS5, NOTE_E5, NOTE_C6, NOTE_C6, NOTE_G5, NOTE_FS5, NOTE_D5, 
+    NOTE_DS5, NOTE_E5, NOTE_GS4, NOTE_A4, NOTE_G4, NOTE_A4, NOTE_D5, NOTE_DS5, 
+    NOTE_D5, NOTE_C5, NOTE_G5, NOTE_F5, NOTE_DS5, NOTE_E5, NOTE_GS4, NOTE_A4, 
+    NOTE_G4, NOTE_A4, NOTE_C5, NOTE_D5, NOTE_G5, NOTE_FS5, NOTE_D5, NOTE_DS5, 
+    NOTE_E5, NOTE_C6, NOTE_C6, NOTE_G5, NOTE_C6, NOTE_G5, NOTE_DS5, NOTE_DS5, 
+    NOTE_C5, NOTE_GS4, NOTE_A4, NOTE_C5, NOTE_A4, NOTE_C5, NOTE_D5, NOTE_DS5, 
+    NOTE_D5, NOTE_C5, NOTE_C5, NOTE_C5, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_C5, 
+    NOTE_G4, NOTE_C5, NOTE_GS4, NOTE_C5, NOTE_E5, NOTE_C5, NOTE_C5, NOTE_C5, 
+    NOTE_C5, NOTE_D5, NOTE_C5, NOTE_G4, NOTE_E5, NOTE_C5, NOTE_E5, NOTE_B4, 
+    NOTE_C5, NOTE_G4, NOTE_A4, NOTE_B4, NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_E5, 
+    NOTE_G5, NOTE_C5, NOTE_F5, NOTE_G5, NOTE_C5, NOTE_B4, NOTE_C5, NOTE_G4, 
+    NOTE_A4, NOTE_B4, NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_E5, NOTE_G5, NOTE_A5, 
+    NOTE_F5, NOTE_G5, NOTE_E5, NOTE_C5, NOTE_B4, NOTE_E5, NOTE_A4, NOTE_G4, 
+    NOTE_GS4, NOTE_A4, NOTE_F5, NOTE_F5, NOTE_B4, NOTE_A5, NOTE_A5, NOTE_A5, 
+    NOTE_G5, NOTE_F5, NOTE_E5, NOTE_C5, NOTE_A4, NOTE_G4, NOTE_E5, NOTE_A4, 
+    NOTE_G4, NOTE_GS4, NOTE_A4, NOTE_F5, NOTE_F5, NOTE_A4, NOTE_B4, NOTE_F5, 
+    NOTE_F5, NOTE_F5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_E5, NOTE_C5, NOTE_GS4, 
+    NOTE_A4, NOTE_F5, NOTE_F5, NOTE_A4, NOTE_B4, NOTE_A5, NOTE_A5, NOTE_F5, 
+    NOTE_F5, NOTE_E5, NOTE_C5, NOTE_A4, NOTE_G4, NOTE_C5, NOTE_A4, NOTE_G4, 
+    NOTE_GS4, NOTE_A4, NOTE_F5, NOTE_F5, NOTE_A4, NOTE_B4, NOTE_F5, NOTE_F5, 
+    NOTE_F5, NOTE_C5, NOTE_D5, NOTE_C5, NOTE_C5, NOTE_C5, NOTE_C5, NOTE_C5, 
+    NOTE_D5, NOTE_C5, NOTE_G4, NOTE_C5, NOTE_C5, NOTE_C5, NOTE_E5, NOTE_C5, 
+    NOTE_C5, NOTE_C5, NOTE_C5, NOTE_D5, NOTE_C5, NOTE_G4, NOTE_E5, NOTE_E5, 
+    NOTE_E5, NOTE_B4
+};
+
+int tempo_generated[] = {
+    3, 6, 6, 6, 6, 4, 4, 4, 
+    6, 4, 6, 4, 6, 4, 4, 6, 
+    4, 6, 4, 6, 4, 6, 4, 6, 
+    6, 4, 6, 3, 4, 4, 6, 6, 
+    6, 4, 6, 4, 6, 4, 6, 6, 
+    4, 6, 4, 6, 4, 4, 6, 6, 
+    4, 6, 4, 4, 6, 4, 4, 6, 
+    6, 6, 4, 6, 6, 6, 4, 6, 
+    4, 4, 4, 4, 6, 4, 6, 6, 
+    4, 4, 6, 6, 6, 4, 6, 6, 
+    4, 4, 4, 4, 4, 4, 4, 4, 
+    4, 6, 6, 6, 6, 4, 6, 4, 
+    6, 4, 4, 3, 4, 4, 6, 4, 
+    4, 3, 6, 4, 6, 4, 4, 4, 
+    4, 4, 4, 6, 3, 6, 4, 6, 
+    4, 6, 6, 4, 6, 6, 4, 4, 
+    6, 4, 6, 6, 6, 6, 4, 4, 
+    6, 4, 6, 4, 3, 6, 4, 6, 
+    6, 4, 6, 6, 6, 6, 6, 6, 
+    4, 4, 6, 4, 4, 4, 6, 4, 
+    6, 4, 6, 6, 6, 4, 4, 4, 
+    4, 4, 6, 6, 4, 4, 6, 6, 
+    4, 6, 4, 6, 4, 6, 4, 4, 
+    6, 6, 4, 6, 4, 3, 3, 4, 
+    6, 6, 4, 4, 4, 3, 4, 6, 
+    4, 4, 6, 6, 6, 6, 6, 4, 
+    4, 4, 6, 6, 4, 6, 4, 4, 
+    4, 4, 4, 4, 6, 4, 6, 4, 
+    4, 6, 6, 4, 4, 6, 3, 4, 
+    6, 6
+};
+
+const int size_generated = sizeof(melody_generated) / sizeof(int);
+
+#endif // SONG_GENERATED_H
